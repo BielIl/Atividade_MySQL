@@ -4,11 +4,11 @@ USE db_rh;
 
 CREATE TABLE tb_funcionario(
 	id BIGINT(5) auto_increment,
-    nome VARCHAR(20) NOT NULL,
+   	nome VARCHAR(20) NOT NULL,
 	idade INT(2) NOT NULL,
 	salario INT(6),
 	cargo VARCHAR(20),
-    PRIMARY KEY(id)
+    	PRIMARY KEY(id)
 );
 
 INSERT INTO tb_funcionario(nome, idade, salario, cargo) VALUE 

@@ -23,14 +23,14 @@ CREATE TABLE tb_personagens(
 
 INSERT INTO tb_classes (nome_classe, atributo_principal, funcao) 
 	VALUES  ("Mago", "Inteligencia", "Dano Magico, Controle de Grupo, Dano em Area(Magico)"), 
-			("Guerreiro", "Forca", "Tank, Dano Fisico, Controle de Grupo"),
+		("Guerreiro", "Forca", "Tank, Dano Fisico, Controle de Grupo"),
            	("Ladino", "Destreza", "Auto Dano Fisico, Esquiva, Mobilidade"),
            	("Arqueiro", "Destreza", "Dano Fisico a Distancia, Dano em Area(Fisico)"),
           	("Clerigo", "Fe", "Cura, Suporte, Tank");
           
 INSERT INTO tb_personagens (nome_personagem, nivel_personagem, ataque, defesa, classe_personagem_id)
 	VALUES  ("Rodrigo123", "3", "1d6+2", "1d6+2", "5"),
-			("JogadorFeio", "4", "2d6+2", "1d6", "2"),
+		("JogadorFeio", "4", "2d6+2", "1d6", "2"),
            	("DK", "2", "2d6+1", "1d6-1", "1"),
            	("Krafa'Khan", "3", "2d6+3", "1d20 (caso 16 a 20 esquiva do ataque) ou 1d6", "3"),
            	("BritadeiraDoTiao", "4", "2d6+1", "1d6", "4"),
