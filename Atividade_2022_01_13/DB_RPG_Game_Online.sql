@@ -18,7 +18,7 @@ CREATE TABLE tb_personagens(
     	defesa CHAR(64),
     	PRIMARY KEY (id_personagem),
     	classe_personagem_id BIGINT,
-    	FOREIGN KEY (classe_personagem_id) REFERENCES tb_classe(id_classe)
+    	FOREIGN KEY (classe_personagem_id) REFERENCES tb_classes(id_classe)
 );
 
 INSERT INTO tb_classes (nome_classe, atributo_principal, funcao) 
@@ -48,7 +48,7 @@ SELECT * FROM tb_personagens
 WHERE nome_personagens LIKE "%C%";
 
 SELECT * FROM tb_personagens
-INNER JOIN tb_classe ON tb_classe.id_classe = classe_personagem_id;
+INNER JOIN tb_classe ON tb_classes.id_classe = classe_personagem_id;
 
 SELECT * FROM tb_perssonagens
 WHERE classe_perssonagem_id = 4;
