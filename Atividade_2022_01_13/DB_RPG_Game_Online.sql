@@ -48,7 +48,7 @@ SELECT * FROM tb_personagens
 WHERE nome_personagens LIKE "%C%";
 
 SELECT * FROM tb_personagens
-INNER JOIN tb_classe ON tb_classes.id_classe = classe_personagem_id;
+INNER JOIN tb_classes ON tb_classes.id_classe = classe_personagem_id;
 
 SELECT * FROM tb_perssonagens
 WHERE classe_perssonagem_id = 4;
